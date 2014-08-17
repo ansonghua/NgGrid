@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="ISO-8859-1">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
+
+<title>Daguang's Grid</title>
+</head>
+<body>
+
+<script src="../js/dggrid/dss_grid.js"></script>
+<script src="../js/dggrid/genderAgeGridCtrl.js"></script>
+
+
+<div ng-app="dssGrid" ng-controller="myCtrl">
+	<dssgrid   grid-data="accounts" on-row-clicked="displayRow(row)">	
+	</dssgrid>
+</div>
+</body>
+</html>

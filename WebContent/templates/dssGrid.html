@@ -1,0 +1,14 @@
+<div >
+    <table >
+        <thead >
+            <tr >
+                <th ng-repeat="column in gridData.columns">{{column.headerText}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="row in gridData.rows" ng-dblclick="onRowClicked({row:row})">
+                <td ng-repeat="column in gridData.columns" >{{row[column.name]}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
